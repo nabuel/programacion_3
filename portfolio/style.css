@@ -1,0 +1,95 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(1, 20, 63);
+    color:rgb(254, 252, 252);
+}
+
+.titulo{
+    text-align: center;
+    padding: 20px;
+    color:rgb(202, 209, 214);
+    margin-bottom: 0;
+}
+
+
+nav{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul{
+    list-style: none;
+    margin: 10px auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin-right: 100px;
+    
+}
+.link{
+    text-decoration: none;
+    color:rgb(30, 31, 32);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.link:hover{
+    color:rgb(166, 185, 185);
+    text-decoration: underline;
+    background-color: burlywood;
+}
+
+main{
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 30px;
+}
+
+
+.titulo-presentacion{
+    color: coral
+}
+.boton{
+    border: 2px solid coral;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 6px;
+    font-size: 16px;
+    transition: 0.2s;
+
+
+}
+
+.boton:hover{
+    transform: translateY(-2px);
+
+}
+.boton-primario{
+
+    background-color: rgb(168, 116, 98);
+    color: white;
+}
+
+.boton-primario:hover{
+    background-color: coral;
+
+}
+
+footer{
+    background-color: rgb(247,258,117);
+    text-align: center;
+    padding: 30px;
+}
+
+footer p{
+margin: 0px;
+
+}

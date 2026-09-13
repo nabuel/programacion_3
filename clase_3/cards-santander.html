@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* ====================
+            Variables CSS
+        ==================== */
+        :root {
+            --rojo-primario: #ec0000;
+            --gris-fondo: #b7bec4;
+            --blanco-primario: #ffffff;
+            --negro-primario: #000000;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        #header-der button{
+            font-size: 16xp;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        
+        header nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 450px;
+            justify-content: space-around;
+        }
+
+        .cards-container_sup, .cards-container_inf {
+            display: flex;
+            width: 50%;
+            justify-content: space-around;
+        }
+
+        .card {
+            border-radius: 20px;
+            width: 280px;
+            height: 185px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .card img {
+            width: 50px;
+        }
+
+        .btn-primario{
+            background-color: var(--blanco-primario);
+            color: var(--rojo-primario);
+            border: 1px solid var(--rojo-primario);
+        }
+        .btn-secundario{
+            background-color: var(--rojo-primario);
+            color: var(--blanco-primario);
+            border: 1px transparent;
+        }
+        .primario {
+            background-color: var(--blanco-primario);
+            color: var(--negro-primario);
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px;
+        }
+
+        .secundario {
+            background-color: var(--rojo-primario);
+            color: var(--blanco-primario);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="header-container" id="header-izq"></div>
+                <p>Menú</p>
+
+            <div class="header-container" id="header-cent">
+                <div class="logo-container">
+
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="header-container" id="header-der">
+                <div class="button-container">
+                    <button class="btn-primario">Hacete cliente</button>
+                    <button class="btn-secundario">Online banking</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Conoce todo lo que tenemos para vos</h2>
+
+        <!-- Contenedor de cards -->
+        <div class="cards-container">
+
+
+            <!-- Contenedor superior -->
+            <div class="cards-container_sup">
+
+
+                <div class="card primario">
+                    <div class="card-img">
+                        <img src="https://www.santander.com.ar/api/images/AC_010_wallet_e153129d0c.png?updated_at=2025-08-18T22:17:02.894Z" alt="">
+                    </div>
+                    <h4>Cuentas y tarjetas</h4>
+                </div>
+
+
+                <div class="card secundario">
+                    <div class="card-img">
+                        <img src="https://www.santander.com.ar/api/images/AB_050_account_group_dollar_1_4f579bfd60.png?updated_at=2025-08-19T19:52:16.929Z" alt="">
+                    </div>
+                    <h4>Prestamos personales</h4>
+                </div>
+
+
+                <div class="card primario">
+                    <div class="card-img">
+                        <img src="https://www.santander.com.ar/api/images/ico_auto_549f4ad00f.png?updated_at=2024-03-04T20:38:27.384Z" alt="">
+                    </div>
+                    <h4>Prestamos prendarios</h4>
+                </div>
+
+            </div>
+
+
+            <!-- Contenedor inferior -->
+            <div class="cards-container_inf">
+
+
+                <div class="card secundario">
+                    <div class="card-img">
+                        <img src="https://www.santander.com.ar/api/images/AB_050_account_group_dollar_1_4f579bfd60.png?updated_at=2025-08-19T19:52:16.929Z" alt="">
+                    </div>
+                    <h4>Cuentas y tarjetas</h4>
+                </div>
+
+
+                <div class="card primario">
+                    <div class="card-img">
+                        <img src="https://www.santander.com.ar/api/images/AC_313_investment_fund_fa08ac0444.png?updated_at=2026-04-20T12:50:53.117Z" alt="">
+                    </div>
+                    <h4>Prestamos personales</h4>
+                </div>
+
+
+                <div class="card secundario">
+                    <div class="card-img">
+                        <img src="https://www.santander.com.ar/api/images/AB_050_account_group_dollar_1_4f579bfd60.png?updated_at=2025-08-19T19:52:16.929Z" alt="">
+                    </div>
+                    <h4>Prestamos prendarios</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+</body>
+</html>
