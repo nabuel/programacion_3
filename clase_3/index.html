@@ -12,33 +12,59 @@
 <body>
 
   <header class="#">
-    <div>
-      <a href="https://serene-meerkat-104457.netlify.app/#">KV</a>
-    </div>
-    
-    <div>
-      <h4>Imágenes del Mundo</h4>
-      <ul>
-        <li>Paísajes</li>
-        <li>Ciudades</li>
-        <li>Naturaleza</li>
-      </ul>
-    </div>
+    <div class="contenedor-header">
+      
+      <div class="contenedor-izq">
 
-    <nav>
-      <ul>
-        <li><a href="">Colecciones</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="">Contacto</a></li>
-      </ul>
-    </nav>
+        
+        <div class="contenedor-icon">
+          <a class="icon" href="https://serene-meerkat-104457.netlify.app/#">
+            <strong>KV</strong>
+          </a>
+        </div>
+        
+        <div>
+          <h4>Imágenes del Mundo</h4>
+          <ul class="ul-img-mundo">
+            <li class="gris">Paísajes</li>
+            <li class="gris">Ciudades</li>
+            <li class="gris">Naturaleza</li>
+          </ul>
+        </div>
+        
+      </div>
+      
+        
+      <nav class="contenedor-der">
+        <ul>
+          <li>
+            <a href="">
+              <strong>Colecciones</strong>
+            </a>
+          </li>
+          
+          <li>
+            <a href="#galeria">
+              <strong>Galería</strong>
+            </a>
+          </li>
+          
+          <li>
+            <a href="">
+              <strong>Contacto</strong>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
   </header>
 
   <main>
     <section class="portada">
       <div class="portada-top">
         <h1>Fotografías de todo el mundo</h1>
-        <p>Descubre paisajes, ciudades icónicas y rincones únicos capturados en imágenes de alta calidad.</p>
+        <p class="gris">Descubre paisajes, ciudades icónicas y rincones únicos capturados en imágenes de alta calidad.</p>
 
         <a href="#galeria">Ver Galería</a>
       </div>
@@ -48,31 +74,102 @@
       </div>
     </section>
 
-    <section>
+    <section id="coleccion">
       <h2>Colecciones de fotos</h2>
       
-      <div class="contenedor-colecciones">
-        <article>
-          <div>
+      <div class="contenedor-colecion">
+        <article class="card">
+          <div class="card-img-top">
             <img src="https://picsum.photos/id/1011/600/400" alt="img1">
           </div>
 
-          <div>
+          <div class="card-body">
             <h3>Paisajes</h3>
             <p>Fotografías de montañas, lagos, playas y desiertos alrededor del planeta.</p>
+          </div>
+        </article>
+        
+        <article class="card">
+          <div class="card-img-top">
+            <img src="https://picsum.photos/id/1012/600/400" alt="img2">
+          </div>
+
+          <div class="card-body">
+            <h3>Ciudades</h3>
+            <p>Escenas urbanas de metrópolis modernas y pueblos históricos.</p>
+          </div>
+        </article>
+        
+        <article class="card">
+          <div class="card-img-top">
+            <img src="https://picsum.photos/id/1024/600/400" alt="img3">
+          </div>
+
+          <div class="card-body">
+            <h3>Naturaleza</h3>
+            <p>Fotografía de animales, bosques y entornos naturales llenos de vida.</p>
           </div>
         </article>
       </div>
 
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
+    
+    <section id="info-proyecto">
+      <div class="contenedor-info-proyecto">
+        <h3>Sobre este proyecto</h3>
+
+        <p>Este sitio reúne una selección de imágenes de distintos lugares del mundo para inspirar y mostrar la diversidad de nuestro planeta.</p>
+
+        <ol>
+          <li>Paisajes naturales espectaculares.</li>
+          <li>Ciudades modernas y antiguas.</li>
+          <li>Fotografía de flora y fauna.</li>
+        </ol>
+
+      </div>
+    </section>
+
+    <section id="galeria">
+      <div class="contenedor-galeria">
+        <h3>Galería de imágenes</h3>
+
+        <div class="contenedor-img">
+          <img src="https://picsum.photos/id/603/600/400" alt="img-1">
+          <img src="https://picsum.photos/id/502/600/400" alt="img-2">
+          <img src="https://picsum.photos/id/402/600/400" alt="img-3">
+          <img src="https://picsum.photos/id/1020/600/400" alt="img-4">
+          <img src="https://picsum.photos/id/795/600/400" alt="img-5">
+          <img src="https://picsum.photos/id/1031/600/400" alt="img-6">
+          <img src="https://picsum.photos/id/1043/600/400" alt="img-7">
+          <img src="https://picsum.photos/id/1056/600/400" alt="img-8">
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="contenedor-contacto">
+        <h3>Contato</h3>
+
+        <p>¿Quieres colaborar o compartir tus fotografías?</p>
+        <p><strong>Email:</strong> imagenes@dominio.com</p>
+        <p><strong>Tel:</strong> +54 9 11 1234 5678</p>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <div></div>
-    <div></div>
+    <div class="contenedor-izq">
+      <p><strong>Imágenes del Mundo</strong> ©Todos los derechos reservados</p>
+    </div>
+
+    <div class="contenedor-der">
+      <ul>
+        <li>Paisajes</li>
+        <li>Ciudades</li>
+        <li>Naturaleza</li>
+      </ul>
+    </div>
   </footer>
 </body>
 
